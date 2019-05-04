@@ -5,21 +5,19 @@ import java.util.Scanner;
 import java.util.*;
 
 public class Inicio {
-/*	public static void menu() {
-		int numeroMenu;
-		Scanner index = new Scanner(System.in);
+	public static void menu() {
 		 System.out.print("\nMenu: \n"
 			 		+ "1 - Inserir carro \n2 - Deletar carro \n3 - Listar todos os carros \n"
 			 		+ "4 - Sair do programa"); 
-	     numeroMenu = index.nextInt();
-	     }*/
+	     }
  public static void main(String...args) {
 	 ArrayList<Carro> Carros = new ArrayList();
 	 System.out.print("Bem vindo ao Sistema de Véiculos!");
 	 Scanner index = new Scanner(System.in);
-	 System.out.print("\nMenu: \n"
+	 /* System.out.print("\nMenu: \n"
 		 		+ "1 - Inserir carro \n2 - Deletar carro \n3 - Listar todos os carros \n"
-		 		+ "4 - Sair do programa"); 
+		 		+ "4 - Sair do programa"); */
+	 menu();
      int numeroMenu = index.nextInt();
 	 
 	 do {
@@ -41,9 +39,7 @@ public class Inicio {
 		     Carros.add(newCar); // Adiciona como objeto.
 		     System.out.print("Carro adicionado com sucesso!\n"); // Mensagem de êxito.
 
-			 System.out.print("\nMenu: \n"
-				 		+ "1 - Inserir carro \n2 - Deletar carro \n3 - Listar todos os carros \n"
-				 		+ "4 - Sair do programa"); 
+		     menu();
 		     numeroMenu = index.nextInt();
 		 }
 		 while (numeroMenu == 1);
